@@ -1,4 +1,4 @@
-// app/Livewire/PokemonList.php
+<?php
 namespace App\Livewire;
 
 use App\Services\PokeApiService;
