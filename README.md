@@ -14,7 +14,7 @@ Una Pokédex interactiva que consume la PokeAPI en tiempo real. Construida con L
 - Filtros por tipo de Pokémon.
 - Paginación avanzada con opción de saltar a una página específica.
 - Detalles del Pokémon con estadísticas base, habilidades, peso, altura y descripción en español.
-- Sistema de favoritos asociado al usuario (si está autenticado) o a la sesión del visitante.
+- Sistema de favoritos asociado a la sesión del visitante.
 - Optimización de peticiones con caché de 24 horas en las consultas a la PokeAPI.
 
 ## Capturas de pantalla
