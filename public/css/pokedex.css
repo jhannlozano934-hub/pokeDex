@@ -1,0 +1,121 @@
+.type-fire {
+    background: linear-gradient(135deg, #F08030, #DD2C00);
+}
+
+.type-water {
+    background: linear-gradient(135deg, #4389A2, #2A5566);
+}
+
+.type-grass {
+    background: linear-gradient(135deg, #77C850, #56A532);
+}
+
+.type-electric {
+    background: linear-gradient(135deg, #FFCE4B, #FF9E42);
+}
+
+.type-ice {
+    background: linear-gradient(135deg, #BFF7FE, #88D1F4);
+}
+
+.type-fighting {
+    background: linear-gradient(135deg, #D97770, #E04949);
+}
+
+.type-poison {
+    background: linear-gradient(135deg, #AA6BC8, #7A528A);
+}
+
+.type-ground {
+    background: linear-gradient(135deg, #DEC7A7, #E1974D);
+}
+
+.type-flying {
+    background: linear-gradient(135deg, #94D1F7, #81B5DB);
+}
+
+.type-psychic {
+    background: linear-gradient(135deg, #F5A9FF, #CC87DB);
+}
+
+.type-bug {
+    background: linear-gradient(135deg, #CE9764, #9DAF60);
+}
+
+.type-rock {
+    background: linear-gradient(135deg, #F0C8B4, #C8B587);
+}
+
+.type-ghost {
+    background: linear-gradient(135deg, #B2A9D8, #7A73A0);
+}
+
+.type-dragon {
+    background: linear-gradient(135deg, #C67CC0, #A46294);
+}
+
+.type-dark {
+    background: linear-gradient(135deg, #4A4A4A, #282828);
+}
+
+.type-steel {
+    background: linear-gradient(135deg, #BFBFBF, #9E9E9E);
+}
+
+.type-fairy {
+    background: linear-gradient(135deg, #FCAECA, #FF9B9B);
+}
+
+.stat-hp {
+    background: #4CAF50;
+}
+
+.stat-attack {
+    background: #FF5252;
+}
+
+.stat-defense {
+    background: #81D4FA;
+}
+
+.stat-special-attack {
+    background: #B39DDB;
+}
+
+.stat-special-defense {
+    background: #A5D6A7;
+}
+
+.stat-speed {
+    background: #FFCC80;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hober:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes pulse-star {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+.pulse-star {
+    animation: pulse-star 1s infinite;
+}
+
+.pokeball-bg {
+    background-image: radial-gradient(circle at 50% -20%, rgba(220, 10, 45, 0.08) 0%, transparent 60%);
+}
