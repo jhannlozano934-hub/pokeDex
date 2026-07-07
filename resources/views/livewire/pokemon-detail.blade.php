@@ -68,7 +68,7 @@
                         $statName = $stat['stat']['name'];
                         $statValue = $stat['base_stat'];
                         $percent = min(100, ($statValue / 255) * 100);
-                        $statClass = "stat-" . str_replace('-', '_', $statName);
+                        $statClass = "stat-" . $statName;
                     @endphp
                     <div class="flex items-center gap-3">
                         <span class="text-xs font-semibold text-gray-500 uppercase w-28 text-right shrink-0">
