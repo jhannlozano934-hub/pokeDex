@@ -1,58 +1,54 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Pokédex (Laravel + Livewire)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Una Pokédex interactiva que consume la PokeAPI en tiempo real. Construida con Laravel 13, Livewire 4 y estilizada con TailwindCSS.
 
-## About Laravel
+## Características
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Búsqueda en tiempo real.
+- Filtros por tipo de Pokémon.
+- Paginación avanzada con opción de saltar a una página específica.
+- Detalles del Pokémon con estadísticas base, habilidades, peso, altura y descripción en español.
+- Sistema de favoritos asociado al usuario (si está autenticado) o a la sesión del visitante.
+- Optimización de peticiones con caché de 24 horas en las consultas a la PokeAPI.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Capturas de pantalla
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Vista principal / Lista
+![Lista de Pokémon](screenshots/pokemon-list.png)
 
-## Learning Laravel
+### Detalle de Pokémon
+![Detalle de Pokémon](screenshots/pokemon-detail.png)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Búsqueda de Pokémon
+![Búsqueda de Pokémon](screenshots/pokemon-search.png)
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Instalación
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/jhannlozano934-hub/pokeDex.git
+   cd pokeDex
+   ```
 
-## Agentic Development
+2. Instalar las dependencias de Composer:
+   ```bash
+   composer install
+   ```
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+3. Configurar el entorno:
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-```bash
-composer require laravel/boost --dev
+   *Nota: Configura las credenciales de tu base de datos en el archivo `.env`.*
 
-php artisan boost:install
-```
+4. Ejecutar las migraciones:
+   ```bash
+   php artisan migrate
+   ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5. Levantar el servidor:
+   ```bash
+   php artisan serve
+   ```
