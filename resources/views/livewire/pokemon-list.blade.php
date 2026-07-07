@@ -9,7 +9,7 @@
         <select wire:model.live="selectedType" class="border rounded-lg px-4 py-2">
             <option value="">Todos los tipos</option>
             @foreach ($this->types as $type)
-                <option value="{{ $type['name'] }}">{{ ucfirst($type['name']) }}</option>
+                <option value="{{ $type }}">{{ ucfirst($type) }}</option>
             @endforeach
         </select>
     </div>
