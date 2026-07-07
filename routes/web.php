@@ -1,7 +1,6 @@
 <?php
+use App\Livewire\PokemonList;
+use App\Livewire\PokemonDetail;
 
-use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', PokemonList::class)->name('pokemon.index');
+Route::get('/pokemon/{identifier}', PokemonDetail::class)->name('pokemon.show');
