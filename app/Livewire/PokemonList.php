@@ -22,6 +22,16 @@ class PokemonList extends Component {
         $this->page = $page;
     }
 
+    public function goToInputPage(string $value): void {
+        $num = filter_var($value, FILTER_VALIDATE_INT);
+
+        if ($num == false || $num < 1) {
+            return;
+        }
+
+        $this->page = $num;
+    }
+
     #[Computed()]
     public function types(): array {
 

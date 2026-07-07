@@ -97,7 +97,12 @@
 
             @if ($end < $lastPage)
                 @if ($end < $lastPage - 1)
-                    <span class="px-1 text-gray-400">...</span>
+                    <input
+                        type ="text"
+                        wire:keydown.enter="goToInputPage($event.target.value)"
+                        placeholder="..."
+                        class="w-12 px-2 py-1.5 text-center text-sm font-bold text-gray-700 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pokedex-red focus:border-transparent transition"
+                    >
                 @endif
                 <button wire:click="goToPage({{ $lastPage }})" class="px-3 py-2 rounded-lg text-sm font-medium text-gray-600 bg-white border border-gray-200 hover:bg-gray-50 transition">{{ $lastPage }}</button>
             @endif
