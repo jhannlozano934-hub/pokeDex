@@ -1,5 +1,11 @@
 # Pokédex (Laravel + Livewire)
 
+![Laravel](https://img.shields.io/badge/Laravel-13-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![Livewire](https://img.shields.io/badge/Livewire-4-FB70A9?style=flat-square&logo=livewire&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.3+-777BB4?style=flat-square&logo=php&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-CDN-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![PokeAPI](https://img.shields.io/badge/PokeAPI-v2-EF5350?style=flat-square&logo=pokemon&logoColor=white)
+
 Una Pokédex interactiva que consume la PokeAPI en tiempo real. Construida con Laravel 13, Livewire 4 y estilizada con TailwindCSS.
 
 ## Características
